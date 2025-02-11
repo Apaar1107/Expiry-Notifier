@@ -33,11 +33,12 @@ app.use("/api/v1/record", recordRoutes);
 app.use("/api/v1/store", storeRoutes);
 
 // Serve Frontend Files
-app.use(express.static(path.join(__dirname, "frontend", "dist")));
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html"));
 });
+
 
 // Start Server
 app.listen(PORT, "0.0.0.0", () => {
