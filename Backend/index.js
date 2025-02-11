@@ -20,7 +20,7 @@ app.use(cookie());
 // CORS Configuration
 app.use(
     cors({
-      origin:"https://expiry-notifier-ni1c.onrender.com",
+      origin:"https://expiry-notifier-b6ci.onrender.com",
       credentials: true,
     })
 );
