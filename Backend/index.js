@@ -10,7 +10,7 @@ const cron = require("./utils/cron-job");
 
 const app = express();
 const PORT = process.env.PORT || 8000;
-const __dirname = path.resolve();
+
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
