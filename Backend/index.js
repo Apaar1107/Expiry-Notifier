@@ -20,7 +20,7 @@ app.use(cookie());
 // CORS Configuration
 app.use(
     cors({
-      origin:"http://localhost:5173",
+      origin:"https://expiry-notifier-ni1c.onrender.com",
       credentials: true,
     })
 );
